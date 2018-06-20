@@ -4,18 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String[] array = {"Hoy","es","dia","jueves"};
+        String[] array = {"Hoy","precisamente","es","dia","jueves"};
 
         int longuitudMaxima = 0;
-        int longuitud;
-        int mayor;
+
         String larga = "";
 
 
         for (String a:array){
-            longuitud = a.length();
-            if (longuitud > longuitudMaxima){
-                longuitudMaxima = longuitud;
+
+            if (a.length() > longuitudMaxima){
+                longuitudMaxima = a.length();
                 larga = a;
             }
         }
