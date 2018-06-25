@@ -6,14 +6,11 @@ public class Main {
         int num2 = (int)Math.floor(Math.random()*98+1);
         int suma = 0;
 
-        if(num1<num2){
-            for (int i = num1+1; i < num2; i++){
+        int minimo = Math.min(num1,num2);
+        int maximo = Math.max(num1,num2);
+
+        for (int i = minimo+1; i < maximo; i++){
                 suma += i;
-            }
-        } else {
-            for (int i = num2+1; i < num1; i++){
-                suma += i;
-            }
         }
 
         System.out.println("El primer numero aleatorio es " +num1);
